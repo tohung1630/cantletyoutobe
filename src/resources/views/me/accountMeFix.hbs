@@ -1,0 +1,14 @@
+<div class="mt-4">
+    <h1>Sửa Kênh</h1>
+    <form method="post" action="/me/update?_method=PUT">
+        <div class="form-group">
+            <label for="tenvideo">Tên Kênh</label>
+            <input type="text" value="{{tenkenh.tenkenh}}" class="form-control"  name="tenkenh">
+        </div>
+        <div class="form-group">
+            <label for="videoid">Mô Tả Kênh</label>
+            <input type="text" value="{{tenkenh.motakenh}}" class="form-control"  name="motakenh">
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu Video</button>
+    </form>
+</div>

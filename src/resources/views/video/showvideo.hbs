@@ -1,0 +1,32 @@
+<div class="mt-4">
+    <div class="row">
+        <div class="col-lg-8" id="exampleModal" style="padding-left: 20px;">
+            {{#each youtubechannels}}
+                    <iframe width="850px"  height="480px" src="https://www.youtube.com/embed/{{videoid video ...vid}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>{{tenvideo video ...vid}}</h5>
+                    <p>{{motavideo video ...vid}}</p>
+                    <h6>{{this.tenkenh}}</h6>
+                    {{!-- <p>{{print_person video ...vid}}</p> --}}
+            {{/each}}
+
+            
+        </div>
+        <div class="col-lg-4">
+            {{#each youtubechannelsss}}
+                {{#each video}}
+                <a href="/video/{{this.videoid}}" >
+                    <div class="media mt-2">
+                        <img  src="https://img.youtube.com/vi/{{this.videoid}}/sddefault.jpg" class="align-self-start mr-3" style="width:170px; height:112px ;">
+                        <div class="media-body">
+                            <h6>{{this.tenvideo}}</h6>
+                            <p>{{...tenkenh}}</p>
+                        </div>     
+                    </div>    
+                </a>
+                {{/each}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+

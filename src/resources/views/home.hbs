@@ -1,0 +1,19 @@
+<div class="mt-4">
+    <div class="row">
+        {{#each youtubechannels}}
+                {{#each this.video}}
+                    <div class="col-sm-6 col-lg-3">
+                        <a href="/video/{{this.videoid}}">
+                        <div class="card"> 
+                            <img class="card-img-top" src="https://img.youtube.com/vi/{{this.videoid}}/sddefault.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">{{this.tenvideo}}</h6>
+                                <p class="card-title"> {{...tenkenh}}</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                {{/each}}
+        {{/each}}
+    </div>
+</div>
